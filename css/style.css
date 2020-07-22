@@ -1,0 +1,269 @@
+/*
+Azul 1: #1b262c;
+Azul 2: #0f4c75;
+Azul 3: #3282b8;
+Azul 4: #bbe1fa;
+*/
+*{
+	padding: 0;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(0deg, rgba(27,38,44,0.80) 0%, rgba(15,76,117,0.80) 53%, rgba(50,130,184,0.60) 82%), url(../img/bg1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 110vh;
+}
+header{
+	width: 30%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+header .contPhoto{
+	width: 150px;
+	height: 150px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #ffffff80;
+}
+header .contPhoto img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+header .title{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: center; 
+}
+header .title h2{
+	font-size: 3em;
+	font-weight: 500;
+}
+header .title h1{
+	font-size: 1.5em;
+	font-weight: 300;
+}
+footer{
+	width: 30%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+footer nav ul{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	list-style: none;	
+}
+footer nav ul li{
+	padding: 5px 15px;
+}
+footer nav ul li i{
+	color: #ffffff90;
+	font-size: 1em;
+	padding-right: 3px;
+}
+footer nav ul li a{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	transition: 300ms;
+	text-decoration: none;
+}
+footer nav ul li a:hover{
+	padding-left: 15px;
+	transition: 300ms;
+	font-weight: 700;
+}
+footer .redes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+}
+footer .redes a{
+	color: #ffffff90;
+	font-size: 2.3em;
+	transition: 300ms;
+}
+footer .redes a:hover{
+	color: #fefefe;
+	transition: 300ms;
+}
+.blank{
+	width: 70%;
+	height: 100vh;
+	background-color: #fefefe;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	font-family: 'Raleway', sans-serif;
+}
+.sobreMi{
+	width: 100%;
+	color: #0f4c75;
+	height: 100vh;
+	background-color: #eeeeee;
+	padding: 30px;
+	position: relative;
+}
+.sobreMi h3{
+	font-size: 2.2em;
+	text-align: center;
+	margin: 10px 0;
+	font-weight: 600;
+}
+.sobreMi p{
+	padding: 15px;
+	line-height: 1.5em;
+	z-index: 10;
+	font-family: 'Antic Slab', serif;
+	font-weight: 400;
+	font-size: 1em;
+}
+.sobreMi p a{
+	display: block;
+	text-align: center;
+}
+.sobreMi a i{
+	margin-top: 15px;
+	font-size: 1.3em;
+	color: #1b262c;
+	transition: 300ms;
+}
+.sobreMi a i:hover{
+	padding-top: 5px;
+	transition: 300ms;
+}
+.sobreMi img{
+	padding: 20px;						
+	float: right;
+}
+.sobreMi .wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%
+}
+.conocimientos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	color: #fff;
+	height: 100vh;
+	background-color: #1b262c;
+	padding: 30px;
+}
+.conocimientos div{
+	display: none ;
+}
+.conocimientos > h3{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+.conocimientos > h3 span{
+	font-weight: 600;
+	font-size: 1.7em;
+}
+.conocimientos > h3 .alert{
+	font-weight: 400;
+	font-size: 1.3em;
+	padding:0 1px;
+}
+.conocimientos h3 i{
+	padding-right: 3px;
+}
+.conocimientos .menuConocimientos{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.conocimientos .menuConocimientos h3{
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #0f4c7590;
+	transition: 300ms;
+}
+.conocimientos .menuConocimientos h3:hover{
+	background: #0f4c7560;
+	cursor: pointer;
+	transition: 300ms;
+}
+.conocimientos .menuConocimientos .active{
+	background-color: #3282b890;
+}
+.conocimientos .conocimiento{
+	align-self: center;
+	display: none;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 60%;
+	border:0.5px solid #ffffff70;
+	padding: 30px;
+}
+.conocimientos .conocimiento p{
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+}
+.conocimientos .conocimiento img{
+	width: 300px;
+	opacity: 0.8;
+}
+.conocimientos .conocimiento ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 30px;
+	height: 50%;
+}
+.proyectos{
+	width: 100%;
+	color: #fff;
+	height: 100vh;
+	background-color: #1b262c;
+
+}
+.formacion{
+	width: 100%;
+	color: #fff;
+	height: 100vh;
+	background-color: #0f4c75;
+
+}
+.contacto{
+	width: 100%;
+	color: #fff;
+	height: 100vh;
+	background-color: #1b262c;
+
+}
