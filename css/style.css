@@ -30,7 +30,7 @@ body{
 }
 header{
 	width: 30%;
-	height: 50vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -64,33 +64,33 @@ header .title h1{
 }
 footer{
 	width: 30%;
-	height: 50vh;
+	height: 20vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
-footer nav{
+header nav{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-footer nav ul{
+header nav ul{
 	display: flex;
 	flex-direction: column;
 	width: 80%;
 	list-style: none;	
 }
-footer nav ul li{
+header nav ul li{
 	padding: 5px 15px;
 }
-footer nav ul li i{
+header nav ul li i{
 	color: #ffffff90;
 	font-size: 1em;
 	padding-right: 3px;
 }
-footer nav ul li a{
+header nav ul li a{
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
@@ -98,7 +98,7 @@ footer nav ul li a{
 	transition: 300ms;
 	text-decoration: none;
 }
-footer nav ul li a:hover{
+header nav ul li a:hover{
 	padding-left: 15px;
 	transition: 300ms;
 	font-weight: 700;
@@ -288,14 +288,41 @@ footer .redes a:hover{
 	}
 	.blank > section{
 		height: auto;
-	}
+	}	
 	.container{
 		max-height: none;
 	}
 	.sobreMi{
 		height: auto;
 	}
+	.sobreMi p{
+		text-align: center;
+	}
+	.sobreMi img{
+		width: 100%;
+	}
 	.conocimientos{
 		height: auto;
+		padding: 10px 0;
+	}
+	.conocimientos .menuConocimientos{
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	.conocimientos .conocimiento{
+		width: 95%;
+	}	
+	.conocimientos .menuConocimientos h3 {
+		padding: 10px 5px;
+		display: inline-block;
+		text-align: center;
+		border-bottom: 1px solid #0f4c7590;
+		transition: 300ms;
+		font-size: 13px;
+	}
+	.conocimientos h3 i {
+		padding-right: 1px;
+		display: inline-block;
 	}
 }
