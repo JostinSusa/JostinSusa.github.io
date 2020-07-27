@@ -1,4 +1,5 @@
-var front = document.getElementById('front'),
+(function(){
+	var front = document.getElementById('front'),
 	back = document.getElementById('back'),
 	version = document.getElementById('version'),
 	diseno = document.getElementById('diseno');
@@ -65,3 +66,9 @@ var hFront = document.getElementById('hFront'),
 			diseno.style.display = 'flex';
 		}
 	});
+}());
+
+(function(){
+	
+}());
+
