@@ -129,7 +129,7 @@ footer .redes a:hover{
 .sobreMi{
 	width: 100%;
 	color: #0f4c75;
-	height: 100vh;
+	height: auto;
 	background-color: #eeeeee;
 	padding: 30px;
 	position: relative;
@@ -146,7 +146,7 @@ footer .redes a:hover{
 	z-index: 10;
 	font-family: 'Antic Slab', serif;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 .sobreMi p a{
 	display: block;
@@ -179,7 +179,7 @@ footer .redes a:hover{
 	justify-content: space-around;
 	width: 100%;
 	color: #fff;
-	height: 100vh;
+	height: auto;
 	background-color: #1b262c;
 	padding: 30px;
 }
@@ -207,6 +207,7 @@ footer .redes a:hover{
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 20px;
 }
 .conocimientos .menuConocimientos h3{
 	padding: 10px 15px;
@@ -241,6 +242,10 @@ footer .redes a:hover{
 .conocimientos .conocimiento img{
 	width: 300px;
 	opacity: 0.8;
+}
+.conocimientos .conocimiento .bigImg{
+	width: 250px;
+	padding: 15px;
 }
 .conocimientos .conocimiento ul{
 	display: flex;
