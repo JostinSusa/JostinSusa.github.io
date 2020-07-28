@@ -67,7 +67,7 @@ var hFront = document.getElementById('hFront'),
 		}
 	});
 }());
-
+//********************************** Funcion del slider de Proyectos****************************************
 (function(){
 	var itemShow = document.getElementById('itemShow'),
 		slide = document.getElementById('slide'),
@@ -92,16 +92,25 @@ var hFront = document.getElementById('hFront'),
 	}
 
 	btnPrev.addEventListener('click',function(){
-		list[count].style.display = 'none';
-		count = count - 1;
-		resetCount();
-		list[count].style.display = 'flex';
+		list[count].style.marginLeft = '-150%';
+		setTimeout(function(){
+			list[count].style.display = 'none';
+			list[count].style.margin = '0';
+			count = count - 1;
+			resetCount();
+			list[count].style.display = 'flex';
+		},300);		
+		
 	});
 	btnNext.addEventListener('click',function(){
-		list[count].style.display = 'none';
-		count = count + 1;
-		resetCount();
-		list[count].style.display = 'flex';
+		list[count].style.marginRight = '-150%';
+		setTimeout(function(){
+			list[count].style.display = 'none';
+			list[count].style.margin = '0';
+			count = count + 1;
+			resetCount();
+			list[count].style.display = 'flex';
+		},300);
 	});
 }());
 

@@ -133,11 +133,12 @@ footer .redes a:hover{
 	background-color: #eeeeee;
 	padding: 30px;
 	position: relative;
+	min-height: 100vh;
 }
 .sobreMi h3{
 	font-size: 2.2em;
 	text-align: center;
-	margin: 10px 0;
+	margin: 20px 0;
 	font-weight: 600;
 }
 .sobreMi p{
@@ -182,6 +183,7 @@ footer .redes a:hover{
 	height: auto;
 	background-color: #1b262c;
 	padding: 30px;
+	min-height: 100vh;
 }
 .conocimientos div{
 	display: none ;
@@ -386,6 +388,7 @@ footer .redes a:hover{
 	z-index: 10;
 	overflow: hidden;
 	border: 1px solid #1b262c;
+	transition: 300ms;
 }
 .proyectos .slide .itemShow .item img{
 	width: 100%;
