@@ -388,7 +388,11 @@ footer .redes a:hover{
 	z-index: 10;
 	overflow: hidden;
 	border: 1px solid #1b262c;
+<<<<<<< HEAD
 	transition: 300ms;
+=======
+	transition: 500ms;
+>>>>>>> 152d188
 }
 .proyectos .slide .itemShow .item img{
 	width: 100%;
@@ -441,4 +445,3 @@ footer .redes a:hover{
 	cursor: pointer;
 	color: #fff;
 }
-
