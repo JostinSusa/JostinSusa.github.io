@@ -91,17 +91,36 @@ var hFront = document.getElementById('hFront'),
 		}
 	}
 
+	setInterval(function(){
+		list[count].style.opacity = '0.1';
+		setTimeout(() => {
+			list[count].style.display = 'none';
+			list[count].style.opacity = '1';
+			count = count + 1;
+			resetCount();
+			list[count].style.display = 'flex';
+		}, 800);
+	},15000);
+
 	btnPrev.addEventListener('click',function(){
-		list[count].style.display = 'none';
-		count = count - 1;
-		resetCount();
-		list[count].style.display = 'flex';
+		list[count].style.opacity = '0.1';
+		setTimeout(() => {
+			list[count].style.display = 'none';
+			list[count].style.opacity = '1';
+			count = count + 1;
+			resetCount();
+			list[count].style.display = 'flex';
+		},800);
 	});
 	btnNext.addEventListener('click',function(){
-		list[count].style.display = 'none';
-		count = count + 1;
-		resetCount();
-		list[count].style.display = 'flex';
+		list[count].style.opacity = '0.1';
+		setTimeout(() => {
+			list[count].style.display = 'none';
+			list[count].style.opacity = '1';
+			count = count + 1;
+			resetCount();
+			list[count].style.display = 'flex';
+		}, 800);
 	});
 }());
 
