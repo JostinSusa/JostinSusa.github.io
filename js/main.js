@@ -69,6 +69,39 @@ var hFront = document.getElementById('hFront'),
 }());
 
 (function(){
+	var itemShow = document.getElementById('itemShow'),
+		slide = document.getElementById('slide'),
+		btnPrev = document.getElementById('btnPrev'),
+		btnNext = document.getElementById('btnNext'),
+		itemOne = document.getElementById('itemOne'),
+		itemTwo = document.getElementById('itemTwo'),
+		itemThree = document.getElementById('itemThree');
+
+	var list = [itemOne, itemTwo, itemThree];
+
+	var count = 0;
 	
+	list[count].style.display = 'flex';
+
+	function resetCount(){
+		if(count < 0){
+			count = 2;
+		}else if(count > 2){
+			count = 0;
+		}
+	}
+
+	btnPrev.addEventListener('click',function(){
+		list[count].style.display = 'none';
+		count = count - 1;
+		resetCount();
+		list[count].style.display = 'flex';
+	});
+	btnNext.addEventListener('click',function(){
+		list[count].style.display = 'none';
+		count = count + 1;
+		resetCount();
+		list[count].style.display = 'flex';
+	});
 }());
 
