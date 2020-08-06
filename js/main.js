@@ -66,6 +66,7 @@ var hFront = document.getElementById('hFront'),
 			diseno.style.display = 'flex';
 		}
 	});
+<<<<<<< HEAD
 }());
 //********************************** Funcion del slider de Proyectos****************************************
 (function(){
@@ -145,3 +146,6 @@ var hFront = document.getElementById('hFront'),
 	});
 }());
 
+=======
+}());
+>>>>>>> 2312f33b037025cd638bc6b58dc30e61e1fa5734
