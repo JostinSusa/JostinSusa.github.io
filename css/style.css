@@ -257,20 +257,7 @@ footer .redes a:hover{
 	height: 50%;
 }
 
-.formacion{
-	width: 100%;
-	color: #fff;
-	height: 100vh;
-	background-color: #0f4c75;
 
-}
-.contacto{
-	width: 100%;
-	color: #fff;
-	height: 100vh;
-	background-color: #1b262c;
-
-}
 @media (max-width: 800px){
 	header{
 		width: 100%;
@@ -279,7 +266,7 @@ footer .redes a:hover{
 	footer{
 		width: 100%;
 		order: 3;
-		background: linear-gradient(0deg, rgba(27,38,44,0.80) 0%, rgba(15,76,117,0.80) 53%, rgba(50,130,184,0.60) 82%), url(../img/bg1.jpg);
+		background: linear-gradient(0deg, rgba(27,38,44,1) 0%, rgba(50,130,184,1) 100%);
 	}
 	.blank{
 		width: 100%;
@@ -332,47 +319,30 @@ footer .redes a:hover{
 	background-color: #eeeeee;
 	text-align: center;
 	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
 }
+
 .proyectos > h3{
 	font-size: 2.2em;
 	text-align: center;
 	font-weight: 600;
-	margin: 10px 0;
 	color: #1b262c;
 }
 .proyectos .slide .item{
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	text-align: center;
-	border: 0.5px solid #1b262c;
 }
 .proyectos .slide .item img{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-<<<<<<< HEAD
-	position: relative;
-	z-index: 10;
-	overflow: hidden;
-	border: 1px solid #1b262c;
-<<<<<<< HEAD
-	transition: 300ms;
-=======
-	transition: 500ms;
->>>>>>> 152d188
-}
-.proyectos .slide .itemShow .item img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-=======
 	object-fit: contain;
 	object-position: center;
->>>>>>> 2312f33b037025cd638bc6b58dc30e61e1fa5734
 	z-index: -1;
 	transition: 300ms;
 }
@@ -406,9 +376,100 @@ footer .redes a:hover{
 .proyectos .slide .item .textSlide a:hover{
 	border: 3px solid #fff;
 }
-<<<<<<< HEAD
-=======
 .proyectos .slide .item:hover .textSlide{
 	display: flex;
 }
->>>>>>> 2312f33b037025cd638bc6b58dc30e61e1fa5734
+@media (max-width: 700px){
+	.proyectos .slide .item{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 0.5px solid #0f4c75;
+		height: auto;
+	}
+	.proyectos .slide .item img{
+		position: relative;
+		width: 100%;
+		object-position: center;
+		z-index: -1;
+		transition: 300ms;
+	}
+	.proyectos .slide .item .textSlide{
+		display: flex;
+		margin: 20px auto;
+	}
+	.proyectos .slide .item .textSlide a,
+	.proyectos .slide .item .textSlide h3,
+	.proyectos .slide .item .textSlide p{
+		margin: 10px auto;
+	}
+	.proyectos .slide .item:hover img{
+		opacity: 1;
+		transition: 300ms;
+	}
+}
+.formacion{
+	width: 100%;
+	color: #fff;
+	max-height: 100vh;
+	background-color: #1b262c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+	padding-bottom: 50px;
+}
+.formacion > h3{
+	font-size: 2.2em;
+	margin: 20px 0;
+}
+.formacion .sliderFormacion{
+	width: 80%;
+	height: auto;
+}
+.formacion .sliderFormacion .itemForm{
+	height: 150px;
+	background-color: #fff;
+	margin: 10px;
+	color: #1b262c;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 2px;
+}
+.formacion .sliderFormacion .itemForm a{
+	text-decoration: none;
+	padding: 10px 15px;
+	background-color: transparent;
+	border: 1.5px solid #1b262c;
+	color: #1b262c;
+	transition: 300ms;
+}
+.formacion .sliderFormacion .itemForm a:hover{
+	background-color: #1b262c;
+	color: #fff;
+	transition: 300ms;
+}
+.slick-prev::before,
+.slick-next::before{
+	color: #fff;
+}
+.contacto{
+	width: 100%;
+	color: #fff;
+	height: 100vh;
+	background-color: #eeeeee;
+position: relative;
+}
+.contacto::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to top, transparent, #1b262c);
+}
