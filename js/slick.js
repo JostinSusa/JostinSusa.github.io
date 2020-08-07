@@ -25,8 +25,3 @@ responsive: [
     }
 ]
 });
-$('#send').on('click', function(){
-    $('#name').val('');
-    $('#email').val('');
-    $('#message').val('');
-});
