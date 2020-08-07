@@ -17,11 +17,16 @@ responsive: [
     {
     breakpoint: 480,
     settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1
     }
     }
 ]
+});
+$('#send').on('click', function(){
+    $('#name').val('');
+    $('#email').val('');
+    $('#message').val('');
 });

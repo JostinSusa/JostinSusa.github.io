@@ -460,8 +460,13 @@ footer .redes a:hover{
 	width: 100%;
 	color: #fff;
 	height: 100vh;
-	background-color: #eeeeee;
-position: relative;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 .contacto::before{
 	content: '';
@@ -472,4 +477,76 @@ position: relative;
 	top: 0;
 	left: 0;
 	background: linear-gradient(to top, transparent, #1b262c);
+	z-index: -1;
+}
+.contacto div{
+	display: none ;
+}
+.contacto > h3{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-top: 30px;
+}
+.contacto > h3 span{
+	font-weight: 600;
+	font-size: 1.7em;
+}
+.contacto form{
+	width: 80%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 10;
+}
+.contacto form input[type="text"],
+.contacto form input[type="email"]{
+	width: 350px;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.8em;
+}
+.contacto form input[type="text"]:focus,
+.contacto form input[type="email"]:focus{
+	border: 2px solid #1b262c;
+}
+.contacto form textarea{
+	width: 350px;
+	min-width: 350px;
+	max-width: 350px;
+	height: 150px;
+	min-height: 100px;
+	max-height: 200px;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.8em;
+}
+.contacto form textarea:focus{
+	border: 2px solid #1b262c;
+
+}
+.contacto form input[type="submit"]{
+	padding: 10px 15px;
+	background-color: #1b262c;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
+	border: 2px solid #1b262c;
+}
+.contacto form input[type="submit"]:hover{
+	cursor: pointer;
+}
+.contacto .copy{
+	display: inline-block;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	background-color: #1b262c;
 }
