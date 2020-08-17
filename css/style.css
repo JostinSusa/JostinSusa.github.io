@@ -126,6 +126,17 @@ footer .redes a:hover{
 	scroll-behavior: smooth;
 	font-family: 'Raleway', sans-serif;
 }
+.blank::-webkit-scrollbar{
+	width: 10px;
+	background-color: #1b262c;
+}
+.blank::-webkit-scrollbar-thumb{
+	background-color: #eeeeee;
+	border: 2px solid #1b262c;
+}
+.blank::-webkit-scrollbar-thumb:hover{
+	background-color: #eeeeeebd;
+}
 .sobreMi{
 	width: 100%;
 	color: #0f4c75;
@@ -331,6 +342,7 @@ footer .redes a:hover{
 	font-weight: 600;
 	color: #1b262c;
 }
+
 .proyectos .slide .item{
 	position: relative;
 	width: 100%;
@@ -380,12 +392,16 @@ footer .redes a:hover{
 	display: flex;
 }
 @media (max-width: 700px){
+	.proyectos{
+		padding: 30px;
+	}
 	.proyectos .slide .item{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		border: 0.5px solid #0f4c75;
 		height: auto;
+		min-height: 400px;
 	}
 	.proyectos .slide .item img{
 		position: relative;
@@ -452,8 +468,8 @@ footer .redes a:hover{
 	color: #fff;
 	transition: 300ms;
 }
-.slick-prev::before,
-.slick-next::before{
+.formacion .slick-prev::before,
+.formacion .slick-next::before{
 	color: #fff;
 }
 .contacto{
