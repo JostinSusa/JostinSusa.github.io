@@ -1,4 +1,5 @@
 $('.slide').slick({
+     adaptiveHeight: true
 });
 $('.sliderFormacion').slick({
 centerMode: true,
